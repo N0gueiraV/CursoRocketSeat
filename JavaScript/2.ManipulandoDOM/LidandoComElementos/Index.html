@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <body>
+
+            <div id="App">
+                <input id="nome"/>
+            </div>
+
+            <script>
+                //Criando um novo elemento
+                var linkElement = document.createElement('a');
+
+                //Setando atributos ao elemento
+                linkElement.setAttribute('href', 'http://rocketseat.com.br');
+                linkElement.setAttribute('title', 'Site da RocketSeat');
+
+                //Adicionando nós ao elemento criado
+                var textElement = document.createTextNode('Acessar site da Rocketseat');
+                linkElement.appendChild(textElement);
+
+                //Adicionando o elemento ao DOM
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(linkElement);
+
+                //Removendo elemento da DOM
+                var InputElement = document.querySelector('#nome');
+                containerElement.removeChild(InputElement);
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <body>
+
+            <div id="App">
+                <input type="text" name="nome" id="nome"/>
+                <button class="botao">Adicionar</button>
+            </div>
+
+            <script>
+                // document. = Referencia a DOM
+                //Busca um elemento da DOM com base em seu ID
+                var inputElement = document.getElementById('nome');
+                console.log(inputElement);
+
+                //Outras formas de buscar elementos
+                
+                //Busca o primeiro elemento com uma tage name especifica
+                var InputElement2 = document.querySelector('input[name=nome]');
+                console.log(InputElement2);
+
+                //Adicionando o Onclick a um botão
+                var btnElement = document.querySelector('button.botao');
+                var inputElement = document.querySelector('input[name=nome]');
+
+                btnElement.onclick = function(){
+                    var text = inputElement.value;
+                    alert(text);
+                }
+
+            </script>
+        </body>
+    </head>
+</html>
